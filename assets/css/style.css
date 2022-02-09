@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+text-decoration: none;
+}
+.logo{
+  
+    position: relative;
+}
+.logo h4{
+margin-left: 45px;
+font-weight: 900;
+}
+.logo::after{
+    content: "";
+    background: #2979ff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.btn-lg{
+    font-size: 15px;
+    width: 350px;
+    padding: 20px;
+}
+.header{
+    background-image: url('../images/bg1.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    font-weight: 500;
+    padding: 10px;
+}
+/* .header::before{
+    content: "";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background: rgba(0,0,0,.6);
+} */
+
+.header-content {
+    color: #fff;
+    text-align: center;
+}
+
+.more-info-sec{
+    background-image: url('../images/bg2.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    font-weight: 500;
+    min-height: 350px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+}
+ .card{
+    box-shadow: -1px 4px 8px 5px #eee;
+
+}
+.overlay{
+    height: 230px;background-color: #fff; margin-top: -230px;
+}
+.blog-sec .card {
+    max-width: 400px;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+  .blog-sec .card .card-title {
+    font-weight: bold;
+  }
+  .card-body{
+      padding: 1rem 2em;;
+  }
+  .blog-sec .card img {
+      max-width: 150px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: calc(0.25rem - 1px);
+  }
+  
+  footer .footer-header {
+    font-size: 13px;
+    max-width: 230px;
+
+}
+
+  .footer-links {
+      list-style: none;
+      font-weight: 700;
+      padding-left: 0;
+      font-size: 13px;
+      line-height: 2.5em;
+  }
+  .footer-social-links a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 4px 8px 5px #eee;
+  }
+  .footer-bottom{
+      font-size: 13px;
+  }
+  @media only screen and (max-width: 408px) {
+    .btn-lg{
+        width: 100%;  
+       }
+  }
+  @media only screen and (max-width: 768px) {
+    
+    .blog-sec .card   .card-body {
+      padding: 0.5em 1.2em;
+    }
+
+    .blog-sec .card  img {
+      width: 50%;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .blog-sec .card  img {
+      width: 40%;
+    }
+  }
